@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-glow-indigo {
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+  }
+  .text-glow-emerald {
+    text-shadow: 0 0 20px rgba(16, 185, 129, 0.6);
+  }
+  .text-glow-fuchsia {
+    text-shadow: 0 0 20px rgba(217, 70, 239, 0.6);
+  }
+  .glass-panel {
+    background: rgba(15, 19, 29, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+}
