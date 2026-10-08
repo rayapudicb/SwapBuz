@@ -12,16 +12,33 @@
   .text-glow-fuchsia {
     text-shadow: 0 0 20px rgba(217, 70, 239, 0.6);
   }
-  .glass-panel {
+
+  /* DARK MODE glass panels */
+  .dark .glass-panel {
     background: rgba(15, 19, 29, 0.75);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
-  .glass-card {
+  .dark .glass-card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  /* LIGHT MODE glass panels */
+  .light .glass-panel {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.06);
+  }
+  .light .glass-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.01) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
   }
 }
