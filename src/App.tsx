@@ -202,13 +202,13 @@ export default function App() {
     <div className={`${theme} relative min-h-screen ${t(theme, 'text-slate-100', 'text-slate-800')} selection:bg-indigo-500 selection:text-white overflow-x-hidden transition-colors duration-500`}>
 
       {/* ─── FULLSCREEN YOUTUBE BACKGROUND VIDEO ─── */}
-      <div className={`fixed inset-0 w-full h-full overflow-hidden pointer-events-none -z-50 ${t(theme, 'bg-[#06080D]', 'bg-slate-50')}`}>
+      <div className={`fixed inset-0 w-full h-full overflow-hidden pointer-events-none -z-50 ${t(theme, 'bg-[#06080D]', 'bg-[#121620]')}`}>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160vw] h-[160vh] min-w-[100%] min-h-[100%] pointer-events-none scale-[1.35]">
           <iframe
             key={v.id + v.youtubeId}
             src={`https://www.youtube.com/embed/${v.youtubeId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${v.youtubeId}&playsinline=1&rel=0&modestbranding=1&enablejsapi=1&iv_load_policy=3`}
             title="Multi-Sport Live Background Video"
-            className={`w-full h-full object-cover pointer-events-none transition-opacity duration-1000 ${t(theme, 'opacity-85 brightness-105 contrast-110 saturate-125', 'opacity-30 brightness-110 contrast-100 saturate-110')}`}
+            className={`w-full h-full object-cover pointer-events-none transition-opacity duration-1000 ${t(theme, 'opacity-85 brightness-105 contrast-110 saturate-125', 'opacity-85 brightness-105 contrast-110 saturate-120')}`}
             allow="autoplay; encrypted-media"
           />
         </div>
@@ -217,10 +217,10 @@ export default function App() {
           style={{
             background: isDark
               ? `radial-gradient(circle at top right, ${v.glowColor}, transparent 65%), linear-gradient(to bottom, rgba(6,8,13,0.35) 0%, rgba(6,8,13,0.18) 50%, rgba(6,8,13,0.55) 100%)`
-              : `radial-gradient(circle at top right, ${v.glowColorLight}, transparent 65%), linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.7) 100%)`,
+              : `radial-gradient(circle at top right, ${v.glowColorLight}, transparent 70%), linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.20) 100%)`,
           }}
         />
-        <div className={`absolute inset-0 pointer-events-none ${t(theme, 'bg-black/10', 'bg-white/20')}`} />
+        <div className={`absolute inset-0 pointer-events-none ${t(theme, 'bg-black/10', 'bg-black/5')}`} />
       </div>
 
       {/* ─── FLOATING MULTI-SPORT CHANNEL DOCK ─── */}
